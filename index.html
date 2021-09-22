@@ -4,39 +4,41 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>FLEXBOX</title>
+		<title>
+			HOVER, TRANSITIONS, ANIMATIONS(apply to svg and img only) &
+			TRANSFORMATIONS
+		</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<!--FLEXBOX-->
-		<h1 class="text-4xl font-bold text-center py-8">GRID</h1>
-		<div class="grid grid-cols-3 gap-4">
-			<div class="bg-red-500 text-white h-full col-span-2 row-span-2">
-				<p>This is my first grid item</p>
-			</div>
-			<div class="bg-blue-500 text-white h-24">
-				<p>This is my second grid item</p>
-			</div>
-			<div class="bg-yellow-500 text-white h-24">
-				<p>This is my third grid item</p>
-			</div>
-			<div class="bg-purple-500 text-white h-24">
-				<p>This is my fourth grid item</p>
-			</div>
-		</div>
+		<!--HOVER, TRANSITIONS, ANIMATIONS(apply to svg and img only) & TRANSFORMATIONS-->
+		<div class="w-4/5 mx-auto text-center py-12">
+			<a
+				href=""
+				class="
+					bg-blue-500
+					text-white
+					py-4
+					px-8
+					rounded
+					text-xl
+					hover:bg-blue-300
+					transition-color
+					duration-200
+					delay-200
+				"
+				>Click me!</a
+			>
 
-		<h2 class="text-4xl font-bold text-center py-8">Flexbox</h2>
+			<!--<img
+				src="https://cdn.pixabay.com/photo/2020/07/21/16/24/landscape-5426755__340.jpg"
+				class="animate-bounce"
+			/>-->
 
-		<div class="flex flex-wrap gap-4 h-full">
-			<div class="bg-red-500 text-white h-24 flex-auto">
-				<p>Flex item 1</p>
-			</div>
-			<div class="bg-blue-500 text-white h-24 flex-auto">
-				<p>Flex item 2</p>
-			</div>
-			<div class="bg-yellow-500 text-white h-24">
-				<p>Flex item 3</p>
-			</div>
+			<img
+				src="https://cdn.pixabay.com/photo/2020/07/21/16/24/landscape-5426755__340.jpg"
+				class="transform transition-all hover:translate-x-4"
+			/>
 		</div>
 	</body>
 </html>
