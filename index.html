@@ -4,41 +4,31 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			HOVER, TRANSITIONS, ANIMATIONS(apply to svg and img only) &
-			TRANSFORMATIONS
-		</title>
+		<title>RESPONSIVE DESIGNS</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<!--HOVER, TRANSITIONS, ANIMATIONS(apply to svg and img only) & TRANSFORMATIONS-->
-		<div class="w-4/5 mx-auto text-center py-12">
-			<a
-				href=""
-				class="
-					bg-blue-500
-					text-white
-					py-4
-					px-8
-					rounded
-					text-xl
-					hover:bg-blue-300
-					transition-color
-					duration-200
-					delay-200
-				"
-				>Click me!</a
-			>
-
-			<!--<img
-				src="https://cdn.pixabay.com/photo/2020/07/21/16/24/landscape-5426755__340.jpg"
-				class="animate-bounce"
-			/>-->
-
-			<img
-				src="https://cdn.pixabay.com/photo/2020/07/21/16/24/landscape-5426755__340.jpg"
-				class="transform transition-all hover:translate-x-4"
-			/>
+		<!--RESPONSIVE DESIGNS-->
+		<div
+			class="
+				grid grid-cols-1
+				sm:grid-cols-2 sm:text-white
+				md:grid-cols-3
+				lg:grid-cols-4
+			"
+		>
+			<div class="bg-red-500 sm:hidden">
+				<p>Item 1</p>
+			</div>
+			<div class="bg-blue-500">
+				<p>Item 2</p>
+			</div>
+			<div class="bg-yellow-500">
+				<p>Item 3</p>
+			</div>
+			<div class="bg-purple-500">
+				<p>Item 4</p>
+			</div>
 		</div>
 	</body>
 </html>
